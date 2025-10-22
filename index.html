@@ -2,32 +2,33 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>＝LOVE メンバー紹介</title>
+    <title>都道府県 漢字・連想ゲーム</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>＝LOVE メンバー紹介</h1>
+        <h1>都道府県 漢字・連想ゲーム</h1>
+        <p>ヒントの漢字が共通して使われている都道府県名をすべて答えましょう！</p>
     </header>
 
     <main>
-        <div class="member-list">
-            <div class="member-card">
-                <h2>大谷 映美里</h2>
-                <p>OTANI EMIRI</p>
-                <p class="description">あなたの推しポイントやプロフィール情報をここに記述！</p>
+        <div id="quiz-area">
             </div>
-            
-            <div class="member-card">
-                <h2>大場 花菜</h2>
-                <p>OBA HANA</p>
-                <p class="description">...</p>
-            </div>
-            </div>
+
+        <button id="next-button">次の問題へ</button>
+
+        <div id="result-area" class="hidden">
+            <h2>答え合わせ</h2>
+            <p id="answer-text"></p>
+            <h3>解説</h3>
+            <p id="explanation-text"></p>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 My =LOVE Fan Page</p>
+        <p>&copy; 2025 My Quiz Page</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
