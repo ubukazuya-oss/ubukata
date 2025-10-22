@@ -1,0 +1,57 @@
+/* 基本リセット */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5; /* 背景色 */
+    color: #333;
+}
+
+header {
+    background-color: #ff66aa; /* イコラブっぽいピンク */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member-card h2 {
+    color: #ff66aa; /* カードのタイトル色 */
+}
+
+.description {
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
