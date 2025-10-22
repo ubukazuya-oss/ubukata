@@ -1,17 +1,17 @@
-/* 基本リセット */
 body {
-    font-family: sans-serif;
+    font-family: 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f5; /* 背景色 */
+    background-color: #f7f7f7;
     color: #333;
+    text-align: center;
 }
 
 header {
-    background-color: #ff66aa; /* イコラブっぽいピンク */
+    background-color: #3065a0; /* 青系の色 */
     color: white;
     padding: 20px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -19,39 +19,64 @@ h1 {
 }
 
 main {
-    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.member-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.member-card {
+#quiz-area {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.member-card h2 {
-    color: #ff66aa; /* カードのタイトル色 */
+/* クイズの漢字を大きく表示 */
+#question-text {
+    font-size: 80px;
+    font-weight: bold;
+    color: #cc0000; /* 赤色 */
+    margin: 20px 0;
 }
 
-.description {
-    font-size: 0.9em;
-    margin-top: 15px;
+#next-button {
+    background-color: #4CAF50; /* 緑色のボタン */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #45a049;
+}
+
+#result-area {
+    margin-top: 40px;
+    padding: 30px;
+    border: 2px solid #3065a0;
+    border-radius: 10px;
+    background-color: #e6f0ff; /* 薄い青の背景 */
+    text-align: left;
+}
+
+.hidden {
+    display: none; /* JavaScriptでこのクラスを付け外しして、表示・非表示を切り替えます */
+}
+
+#answer-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc0000;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #e0e0e0;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #eee;
     font-size: 0.8em;
-    margin-top: 40px;
 }
