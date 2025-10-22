@@ -43,7 +43,7 @@ function displayQuiz(index) {
     
     // HTMLの内容を書き換えて、問題を表示
     quizArea.innerHTML = `
-        <p>共通する漢字は？</p>
+        <p>この漢字が含まれる都道府県はどこでしょう？</p>
         <div id="question-text">${quiz.hint}</div>
     `;
 
